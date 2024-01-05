@@ -12,6 +12,8 @@ const getUserDetails = async (userName = 'FreDrickMwepu') => {
     const following = document.querySelector('.following');
     const location = document.querySelector('.location');
     const twitter = document.querySelector('.twitter');
+    const facebook = document.querySelector('.facebook')
+    const instagram = document.querySelector('.instagram')
     const website = document.querySelector('.website');
     const company = document.querySelector('.company');
   
@@ -24,7 +26,9 @@ const getUserDetails = async (userName = 'FreDrickMwepu') => {
     following.innerHTML = data.following;
     location.innerHTML = data.location;
     twitter.innerHTML = data.twitter_username || 'Not Available';
-    website.innerHTML = data.blog || 'No Data';
+    facebook.innerHTML = data.facebook_username || 'Not Available';
+    instagram.innerHTML = data.instagram_username || 'Not Available';
+    website.innerHTML = data.blog || 'No Data Available';
     company.innerHTML = data.company;
   };
   
